@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73decc8c-a477-4c04-8bbe-2d348415fd5f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VP6PNLeAYxYeyps1SpbWIFUvke" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.macedo.leandro.repositories" />
+      <recent name="com.macedo.leandro.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.macedo.leandro.vo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="shooping-cart-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.macedo.leandro.ShoopingCartApplication" />
+      <module name="shooping-cart-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73decc8c-a477-4c04-8bbe-2d348415fd5f" name="Default Changelist" comment="" />
+      <created>1577142357741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577142357741</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577146020794">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577146020794" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1577371027946">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371027946" />
+    <state x="412" y="155" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577146007289">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="155" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577146007289" />
+    <state width="397" height="438" key="DebuggerActiveHint" timestamp="1577369422935">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="397" height="438" key="DebuggerActiveHint/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577369422935" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1577373333842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577373333842" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1577371327483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371327483" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1577371327482">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371327482" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1577371327482">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371327482" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1577371327482">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371327482" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1577371508017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371508017" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1577371508017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371508017" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1577371508016">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371508016" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1577371508017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577371508017" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1577322860411">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577322860411" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1577322941222">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577322941222" />
+    <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1577321171266">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728/1366.0.1280.984@0.0.1366.728" timestamp="1577321171266" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/macedo/leandro/services/impl/ServiceCartImpl.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
