@@ -6,7 +6,7 @@ import lombok.Setter;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
-@Getter @Setter @NoArgsConstructor
+@Getter @Setter
 public class Cart {
 
     @Id
@@ -14,6 +14,11 @@ public class Cart {
     private ObjectId userId;
 
     public Cart(ObjectId userId){
+        this.userId = userId;
+    }
+
+    public Cart(ObjectId userId, ObjectId _id){
+        this._id = _id;
         this.userId = userId;
     }
 
