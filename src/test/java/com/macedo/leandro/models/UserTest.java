@@ -23,7 +23,7 @@ public class UserTest {
     public void userMustHaveIdNameAndEmail(){
         Assert.assertEquals(USER_EMAIL,user.getEmail());
         Assert.assertEquals(USER_NAME, user.getName());
-        Assert.assertEquals(userIdAsString, user.get_id());
+        Assert.assertEquals(userIdAsString, user.getId());
     }
 
 }

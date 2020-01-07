@@ -12,17 +12,17 @@ import org.springframework.data.annotation.Id;
 public class User {
 
     @Id
-    private ObjectId _id;
+    private ObjectId id;
     private String name;
     private String email;
 
-    public User(ObjectId _id, String name, String email){
-        this._id = _id;
+    public User(ObjectId id, String name, String email){
+        this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    public String get_id() {
-        return _id.toHexString();
+    public String getId() {
+        return id.toHexString();
     }
 }

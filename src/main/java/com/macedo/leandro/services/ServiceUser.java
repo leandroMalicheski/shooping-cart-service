@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ServiceUser {
     List<User> findAll();
-    User findBy_id(ObjectId id);
+    User findById(ObjectId id);
     UserVO saveUser(User user);
     void deleteUser(ObjectId id);
 

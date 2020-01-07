@@ -35,13 +35,13 @@ public class ItemController {
     @PutMapping(value = "/{id}")
     public void modifyItemById(@PathVariable("id") ObjectId id, @Valid @RequestBody Item item) {
         logger.info("Updating item id:{}", id);
-        item.set_id(id);
+        item.setId(id);
         serviceItem.updateItem(item);
     }
 
     @PostMapping()
     public Item createItem(@Valid @RequestBody Item item) {
-        logger.info("Adding item id:{}", item.get_id());
+        logger.info("Adding item id:{}", item.getId());
         serviceItem.saveItem(item);
         return item;
     }

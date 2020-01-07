@@ -16,8 +16,7 @@ public class CartTest {
         userIdAsString = userId.toHexString();
         ObjectId cartId = ObjectId.get();
         cartIdAsString = cartId.toHexString();
-
-        Cart cart = new Cart(userId, cartId);
+        cart = new Cart(userId, cartId);
     }
 
     @Test
@@ -28,6 +27,6 @@ public class CartTest {
     @Test
     public void CartMustHaveAUserIdAndCartId(){
         Assert.assertEquals(userIdAsString, cart.getUserId());
-        Assert.assertEquals(cartIdAsString, cart.get_id());
+        Assert.assertEquals(cartIdAsString, cart.getId());
     }
 }

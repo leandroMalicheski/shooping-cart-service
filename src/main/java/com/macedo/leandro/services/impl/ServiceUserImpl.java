@@ -1,6 +1,5 @@
 package com.macedo.leandro.services.impl;
 
-import com.macedo.leandro.controllers.UserController;
 import com.macedo.leandro.models.Cart;
 import com.macedo.leandro.models.User;
 import com.macedo.leandro.repositories.UserRepository;
@@ -37,8 +36,8 @@ public class ServiceUserImpl implements ServiceUser {
     }
 
     @Override
-    public User findBy_id(ObjectId id) {
-        return userRepository.findBy_id(id);
+    public User findById(ObjectId id) {
+        return userRepository.findById(id);
     }
 
     @Override
@@ -47,7 +46,7 @@ public class ServiceUserImpl implements ServiceUser {
         if(isValidUser(user.getEmail())){
             ObjectId userId = ObjectId.get();
             logger.info("Adding user name:{}", user.getName());
-            user.set_id(userId);
+            user.setId(userId);
             userRepository.save(user);
 
             userVO.setValid(true);
@@ -64,7 +63,7 @@ public class ServiceUserImpl implements ServiceUser {
     @Override
     public void deleteUser(ObjectId id) {
         Cart cart = serviceCart.findByUserId(id);
-        userRepository.delete(userRepository.findBy_id(id));
+        userRepository.delete(userRepository.findById(id));
         serviceCart.deleteCart(cart);
     }
 

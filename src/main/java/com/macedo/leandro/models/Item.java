@@ -12,17 +12,18 @@ import org.springframework.data.annotation.Id;
 public class Item {
 
     @Id
-    private ObjectId _id;
+    private ObjectId id;
     private String name;
     private float value;
+    private int qty;
 
-    public Item(ObjectId _id, String name, float value){
-        this._id = _id;
+    public Item(ObjectId id, String name, float value){
+        this.id = id;
         this.name = name;
         this.value = value;
     }
 
-    public String get_id() {
-        return _id.toHexString();
+    public String getId() {
+        return id.toHexString();
     }
 }

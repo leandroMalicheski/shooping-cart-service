@@ -37,13 +37,13 @@ public class UserController {
     @PutMapping(value = "/{id}")
     public void modifyUserById(@PathVariable("id") ObjectId id, @Valid @RequestBody User user) {
         logger.info("Updating user id:{}", id);
-        user.set_id(id);
+        user.setId(id);
         serviceUser.updateUser(user);
     }
 
     @PostMapping()
     public UserVO createUser(@Valid @RequestBody User user) {
-        logger.info("Adding item id:{}", user.get_id());
+        logger.info("Adding item id:{}", user.getId());
         return serviceUser.saveUser(user);
     }
 

@@ -22,7 +22,7 @@ public class ItemTest {
 
     @Test
     public void itemMustHaveNameValueAndId(){
-        Assert.assertEquals(itemIdAsString, item.get_id());
+        Assert.assertEquals(itemIdAsString, item.getId());
         Assert.assertEquals(ITEM_NAME, item.getName());
         Assert.assertEquals(ITEM_VALUE, item.getValue(), FLOAT_DELTA);
     }

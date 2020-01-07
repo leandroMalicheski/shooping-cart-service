@@ -21,18 +21,18 @@ public class ServiceItemImpl implements ServiceItem {
     }
 
     @Override
-    public Item findBy_id(ObjectId id) {
-        return itemRepository.findBy_id(id);
+    public Item findById(ObjectId id) {
+        return itemRepository.findById(id);
     }
 
     @Override
     public void deleteItem(ObjectId id) {
-        itemRepository.delete(itemRepository.findBy_id(id));
+        itemRepository.delete(itemRepository.findById(id));
     }
 
     @Override
     public void saveItem(Item item) {
-        item.set_id(ObjectId.get());
+        item.setId(ObjectId.get());
         itemRepository.save(item);
     }
 
