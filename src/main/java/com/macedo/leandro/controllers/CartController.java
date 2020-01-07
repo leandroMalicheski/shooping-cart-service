@@ -36,5 +36,9 @@ public class CartController {
         return serviceCart.addItem(id, item);
     }
 
+    public Cart removeItemFromCart(@PathVariable ObjectId id, @Valid @RequestBody Item item){
+        return serviceCart.removeItem(id, item);
+    }
+
 
 }

@@ -13,6 +13,8 @@ public interface ServiceCart {
 
     void saveCart(Cart cart);
     void deleteCart(Cart cart);
+
     Cart findByUserId(ObjectId id);
     Cart addItem(ObjectId id, Item item);
+    Cart removeItem(ObjectId id, Item item);
 }

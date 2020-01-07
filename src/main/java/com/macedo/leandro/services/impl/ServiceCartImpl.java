@@ -11,6 +11,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 @Component
@@ -53,8 +54,7 @@ public class ServiceCartImpl implements ServiceCart {
     public Cart addItem(ObjectId id, Item item) {
         Cart cart = cartRepository.findById(id);
         if(cart.getItems() != null){
-            List<Item> items = cart.getItems();
-            for (Item currentItem: items) {
+            for (Item currentItem: cart.getItems()) {
                 if (item.getId() == currentItem.getId()){
                     int newQty = currentItem.getQty() + 1;
                     currentItem.setQty(newQty);
@@ -63,6 +63,25 @@ public class ServiceCartImpl implements ServiceCart {
         }else{
             cart.setItems(Arrays.asList(item));
         }
+        cartRepository.save(cart);
+        return cart;
+    }
+
+    @Override
+    public Cart removeItem(ObjectId id, Item item) {
+        Cart cart = cartRepository.findById(id);
+        List<Item> collection = cart.getItems();
+
+        Item itemFound = collection.stream().filter(currentItem -> item.getId().equals(currentItem.getId())).findAny().orElse(null);
+
+        if(itemFound != null && item.getQty() >=1 ){
+            int newQty = itemFound.getQty() - 1;
+            itemFound.setQty(newQty);
+        }else{
+            collection.removeIf(e -> e.getId().equals(item.getId()));
+        }
+
+        cart.setItems(collection);
         cartRepository.save(cart);
         return cart;
     }

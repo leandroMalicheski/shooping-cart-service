@@ -28,7 +28,7 @@ public class ItemController {
     @GetMapping(value = "/{id}")
     public Item getItemById(@PathVariable("id") ObjectId id) {
         logger.info("Returning item id:{}", id);
-        return serviceItem.findBy_id(id);
+        return serviceItem.findById(id);
     }
 
     @CrossOrigin

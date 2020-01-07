@@ -30,7 +30,7 @@ public class UserController {
     @GetMapping(value = "/{id}")
     public User getUserById(@PathVariable("id") ObjectId id) {
         logger.info("Returning user id:{}", id);
-        return serviceUser.findBy_id(id);
+        return serviceUser.findById(id);
     }
 
     @CrossOrigin
