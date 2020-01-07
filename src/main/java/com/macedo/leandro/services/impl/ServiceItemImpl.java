@@ -32,6 +32,12 @@ public class ServiceItemImpl implements ServiceItem {
 
     @Override
     public void saveItem(Item item) {
+        item.set_id(ObjectId.get());
+        itemRepository.save(item);
+    }
+
+    @Override
+    public void updateItem(Item item) {
         itemRepository.save(item);
     }
 }

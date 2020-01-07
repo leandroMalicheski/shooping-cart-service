@@ -4,7 +4,9 @@ import com.macedo.leandro.controllers.UserController;
 import com.macedo.leandro.models.Cart;
 import com.macedo.leandro.models.User;
 import com.macedo.leandro.repositories.UserRepository;
+import com.macedo.leandro.services.ServiceCart;
 import com.macedo.leandro.services.ServiceUser;
+import com.macedo.leandro.vo.UserVO;
 import org.bson.types.ObjectId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +26,9 @@ public class ServiceUserImpl implements ServiceUser {
     @Autowired
     MongoOperations mongoOperations;
 
+    @Autowired
+    ServiceCart serviceCart;
+
     Logger logger = LoggerFactory.getLogger(ServiceUserImpl.class);
 
     @Override
@@ -37,13 +42,30 @@ public class ServiceUserImpl implements ServiceUser {
     }
 
     @Override
-    public void saveUser(User user) {
-        userRepository.save(user);
+    public UserVO saveUser(User user) {
+        UserVO userVO = new UserVO(false);
+        if(isValidUser(user.getEmail())){
+            ObjectId userId = ObjectId.get();
+            logger.info("Adding user name:{}", user.getName());
+            user.set_id(userId);
+            userRepository.save(user);
+
+            userVO.setValid(true);
+            userVO.setUser(user);
+            logger.info("Generating cart for:{}", user.getName());
+            serviceCart.saveCart(new Cart(userId));
+        }
+        return userVO;
+
+
+
     }
 
     @Override
     public void deleteUser(ObjectId id) {
+        Cart cart = serviceCart.findByUserId(id);
         userRepository.delete(userRepository.findBy_id(id));
+        serviceCart.deleteCart(cart);
     }
 
     @Override
@@ -58,5 +80,10 @@ public class ServiceUserImpl implements ServiceUser {
             isValid = true;
         }
         return isValid;
+    }
+
+    @Override
+    public void updateUser(User user) {
+        userRepository.save(user);
     }
 }

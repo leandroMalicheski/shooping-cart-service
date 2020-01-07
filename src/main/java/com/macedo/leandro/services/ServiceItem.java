@@ -11,4 +11,5 @@ public interface ServiceItem {
     Item findBy_id(ObjectId id);
     void deleteItem(ObjectId id);
     void saveItem(Item item);
+    void updateItem(Item item);
 }

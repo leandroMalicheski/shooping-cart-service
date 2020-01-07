@@ -14,6 +14,5 @@ public class UserVO {
 
     public UserVO(boolean isValid) {
         this.isValid = isValid;
-        this.user = user;
     }
 }

@@ -1,7 +1,6 @@
 package com.macedo.leandro.controllers;
 
 import com.macedo.leandro.models.Cart;
-import com.macedo.leandro.models.Item;
 import com.macedo.leandro.services.ServiceCart;
 import org.bson.types.ObjectId;
 import org.slf4j.Logger;

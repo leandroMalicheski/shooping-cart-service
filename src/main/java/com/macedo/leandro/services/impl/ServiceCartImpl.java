@@ -6,10 +6,7 @@ import com.macedo.leandro.repositories.CartRepository;
 import com.macedo.leandro.services.ServiceCart;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.data.mongodb.core.query.BasicQuery;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
@@ -59,7 +56,6 @@ public class ServiceCartImpl implements ServiceCart {
     public Cart findByUserId(ObjectId id) {
         Query findByUserId = new Query();
         findByUserId.addCriteria(Criteria.where("userId").is(id.toHexString()));
-        Cart cart = mongoOperations.findOne(findByUserId, Cart.class);
-        return cart;
+        return mongoOperations.findOne(findByUserId, Cart.class);
     }
 }

@@ -1,7 +1,6 @@
 package com.macedo.leandro.controllers;
 
 import com.macedo.leandro.models.Item;
-import com.macedo.leandro.repositories.ItemRepository;
 import com.macedo.leandro.services.ServiceItem;
 import org.bson.types.ObjectId;
 import org.slf4j.Logger;
@@ -23,8 +22,7 @@ public class ItemController {
     @GetMapping()
     public List<Item> getAllItem() {
         logger.info("Getting all items.");
-        List<Item> items = serviceItem.findAll();
-        return items;
+        return serviceItem.findAll();
     }
 
     @GetMapping(value = "/{id}")
@@ -38,12 +36,11 @@ public class ItemController {
     public void modifyItemById(@PathVariable("id") ObjectId id, @Valid @RequestBody Item item) {
         logger.info("Updating item id:{}", id);
         item.set_id(id);
-        serviceItem.saveItem(item);
+        serviceItem.updateItem(item);
     }
 
     @PostMapping()
     public Item createItem(@Valid @RequestBody Item item) {
-        item.set_id(ObjectId.get());
         logger.info("Adding item id:{}", item.get_id());
         serviceItem.saveItem(item);
         return item;
