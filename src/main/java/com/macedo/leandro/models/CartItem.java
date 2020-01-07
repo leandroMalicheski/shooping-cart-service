@@ -8,7 +8,6 @@ import org.springframework.data.annotation.Id;
 
 @Getter
 @Setter
-@NoArgsConstructor
 public class CartItem {
 
     @Id
@@ -16,6 +15,13 @@ public class CartItem {
     private ObjectId cartId;
     private ObjectId itemId;
     private int quantity;
+
+    public CartItem(ObjectId _id, ObjectId cartId, ObjectId itemId, int quantity){
+        this._id = _id;
+        this.cartId = cartId;
+        this.itemId = itemId;
+        this.quantity = quantity;
+    }
 
     public String get_id() {
         return _id.toHexString();
